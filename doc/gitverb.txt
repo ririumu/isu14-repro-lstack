@@ -34,7 +34,7 @@ git branch -a |
 
 ```
 git checkout main && 
-    git branch --merged | 
+    git branch | 
     grep -v \* | 
     xargs git branch -D
 ```

@@ -26,3 +26,23 @@ git checkout -b $(date +%s)-update-doc
 git commit 
 git push origin xxxx-update-doc
 ```
+
+* Remove all remote topic branch
+
+```
+git branch -a | 
+    grep remotes | 
+    sed 's/^ *//g' | 
+    grep -v -E "main$" | 
+    awk '{sub("remotes/origin/","")}1' | 
+    xargs -I{} git push origin --delete {}
+```
+
+* Remove all local topic branch
+
+```
+git checkout main && 
+    git branch --merged | 
+    grep -v \* | 
+    xargs git branch -D
+```

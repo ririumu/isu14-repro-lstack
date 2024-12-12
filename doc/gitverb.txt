@@ -1,6 +1,6 @@
 useful verbs in git/gh:
 
-* create issue first git branch 
+* Creating a branch to work on an issue
 
 ```
 gh issue create --title "$(date +%s) protect main branch"
@@ -9,7 +9,7 @@ git branch -a
 git checkout <that_branch>
 ```
 
-* keep topick branch up to date with main
+* Keep topic branch up to date with main
 
 ```
 git checkout main
@@ -17,7 +17,7 @@ git rebase main
 git push origin 5-1734009531-protect-main-branch
 ```
 
-* create new topick branch and push remote
+* Git push new local branch to remote
 
 ```
 git checkout main

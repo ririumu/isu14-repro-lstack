@@ -3,6 +3,7 @@ useful verbs in git/gh:
 * Quick work (without an issue)
 
 ```
+git pull origin main
 git checkout -b $(date +%s)-update
 code .
 gh pr create

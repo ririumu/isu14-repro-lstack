@@ -1,0 +1,2 @@
+localstack で isu 14 が構築できると嬉しい
+

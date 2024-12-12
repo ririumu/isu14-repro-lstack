@@ -1,0 +1,31 @@
+codespace の環境チェック
+====
+
+# OS とアーキテクチャ
+
+まず uname -a すると x86_64 ubuntu だとわかる
+
+    Linux codespaces-1d92b9 6.5.0-1025-azure 
+    #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33:04 UTC 2024 
+    x86_64 x86_64 x86_64 
+    GNU/Linux
+
+# プログラミング言語のバージョン
+
+Python は 3.12 
+
+    Python 3.12.1
+    /home/codespace/.python/current/bin/python
+
+Node は v20
+
+    v20.17.0
+    /home/codespace/nvm/current/bin/node
+
+Ruby は 3.3.4
+
+    ruby 3.3.4 (2024-07-09 revision be1089c8ec) [x86_64-linux]
+    /usr/local/rvm/gems/ruby-3.3.4/bin/ruby
+
+~~> OS / 言語に関して不自由なさそう
+

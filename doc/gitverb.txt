@@ -1,0 +1,28 @@
+useful verbs in git/gh:
+
+* create issue first git branch 
+
+```
+gh issue create --title "$(date +%s) protect main branch"
+gh issue develop 5
+git branch -a
+git checkout <that_branch>
+```
+
+* keep topick branch up to date with main
+
+```
+git checkout main
+git rebase main
+git push origin 5-1734009531-protect-main-branch
+```
+
+* create new topick branch and push remote
+
+```
+git checkout main
+git pull
+git checkout -b $(date +%s)-update-doc
+git commit 
+git push origin xxxx-update-doc
+```

@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 requests = "^2.32.3"
+localstack = "^4.0.3"
+awscli-local = "^0.22.0"
 
 
 [build-system]

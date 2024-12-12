@@ -1,6 +1,8 @@
 codespace の環境チェック
 ====
 
+codespace で動いてほしいわけではないけど…。
+
 # OS とアーキテクチャ
 
 まず uname -a すると x86_64 ubuntu だとわかる

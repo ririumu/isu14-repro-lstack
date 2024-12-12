@@ -1,0 +1,15 @@
+
+what is ?
+
+   AWS らしきものをローカル環境で動かせるので検証環境とできる
+
+how to ?
+
+    `poetry install` で必要なモジュールをインストール
+    `poetry run localstack start` でスタート (初回は時間がかかる)
+    `poetry run localstack status services` で locakstack の起動を確認
+    `poetry run awslocal` は AWSCLI に相当するコマンドとして使える
+    `poetry run awslocal s3 mb s3://foobar` は `s3 mb` と同じ
+    `poetry run awslocal s3 cp pyproject.toml s3://foobar/` は `s3 cp` と同じ
+
+以上 ローカル環境に aws の検証環境ができる

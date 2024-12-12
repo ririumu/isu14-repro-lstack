@@ -46,3 +46,11 @@ git checkout main &&
     grep -v \* | 
     xargs git branch -D
 ```
+
+* Create PR & marge quickly
+
+```
+# git checkout -b $(date +%s)-update
+gh pr create
+gh pr merge
+```
